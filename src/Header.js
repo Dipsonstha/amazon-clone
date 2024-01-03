@@ -2,14 +2,18 @@ import React from "react";
 import "./Header.css";
 import { IoIosSearch } from "react-icons/io";
 import { BiCartAdd } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
-      <img
-        className="header_logo"
-        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-      />
+      <Link to="/">
+        <img
+          className="header_logo"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+        />
+      </Link>
+
       <div className="header__search">
         <input
           type="text"
