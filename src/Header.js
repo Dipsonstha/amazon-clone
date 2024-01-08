@@ -36,12 +36,13 @@ const Header = () => {
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
-          <span className="header__optionLineThree">prime</span>
         </div>
-        <div className="header__optionBasket">
-          <BiCartAdd />
-          <span className="header__optionLineTwo header__basketCount">0</span>
-        </div>
+        <Link to="/checkout">
+          <div className="header__optionBasket">
+            <BiCartAdd />
+            <span className="header__optionLineTwo header__basketCount">0</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
